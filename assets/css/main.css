@@ -1,71 +1,82 @@
 main {
-    margin-top: 2.9rem;
-    padding: 1rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
     display: grid;
-    grid-template: auto / 1fr;
-    gap: 1rem;
-    border-radius: 10px;
-    margin-left: 10vh;
-    margin-right: 10vh;
+    gap: 2rem;
 }
-.theme{
-    display: flex;
-    flex-direction: row;
-    gap: 7rem;
-    justify-content: center;
-    
-    box-sizing: border-box;
 
-    padding: 1rem;
-    overflow: hidden;
-    border-radius: 10px
-    
+.section-title,
+.tittle_theme {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    line-height: 1.1;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.theme {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .galeria {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    img {
-        width: 300px;
-        height: 250px;
-        border-radius: 20px;
-        overflow: hidden;
-    }
+}
+
+.galeria img {
+    width: min(260px, 100%);
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .tittle_theme {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2.5rem;
-    line-height: 0.5;    
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    line-height: 1.1;
     color: #ffffff;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 
-@media (max-width: 550px ){
-    .theme {
-        flex-direction: row;
-        gap: 2rem;
-        height: 100px;
-        justify-content: center;
-        align-items: center;
-        width: 550px;
+@media (max-width: 550px) {
+    main {
+        margin: 1rem auto;
     }
-    .theme img {
-        width: 100px;
-        height: 100px;    
-}
-    .theme h2 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    .theme {
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .theme img,
+    .theme_cards img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .theme h2,
+    .theme h3,
+    .section-title,
+    .tittle_theme {
         font-size: 1.5rem;
-        line-height: 0.5;    
-        color: #ffffff;
-        text-align: center;
-        display: flex;
-}
+        line-height: 1.2;
+    }
+
+    .galeria img {
+        width: 100%;
+    }
 }

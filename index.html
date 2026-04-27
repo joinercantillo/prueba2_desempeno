@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>responsive</title>
+    <title>Festival Gastronómico - Responsive</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,18 +15,19 @@
 
 <body>
     <header id="header_menu" class="main_header">
-        <IMG class="logo" src="assets/img/LOGO.jfif" alt="Logo"></IMG>
+        <img class="logo" src="assets/img/LOGO.jfif" alt="Logo del festival">
 
-        <button id="btn_menu" class="btn_active btn_primary">
+        <button id="btn_menu" class="btn_active btn_primary" aria-controls="menu" aria-expanded="false">
             <ion-icon name="menu-outline"></ion-icon>
+            <span class="sr-only">Abrir menú</span>
         </button>
-        <nav id="menu" class="nav_menu">
-            <a class="nav_item" href="">Inicio</a>
-            <a class="nav_item" href="">Eventos</a>
-            <a class="nav_item" href="">Empresas</a>
-            <a class="nav_item" href="">Galeria</a>
-            <a class="nav_item" href="">Contacto</a>
-            <a class="nav_item_ticket" href="">Comprar entradas</a>
+        <nav id="menu" class="nav_menu" aria-label="Navegación principal">
+            <a class="nav_item" href="#">Inicio</a>
+            <a class="nav_item" href="#">Eventos</a>
+            <a class="nav_item" href="#">Empresas</a>
+            <a class="nav_item" href="#">Galería</a>
+            <a class="nav_item" href="#">Contacto</a>
+            <a class="nav_item_ticket" href="#">Comprar entradas</a>
         </nav>
     </header>
     <main id="main" class="box_cards">
@@ -38,55 +39,62 @@
             <article>El festival gastronomico que despierta tus sentidos</article>
         </div>
 
-        <h2>PROXIMAS FECHAS</h2>
-        <table class="main_table">
-            <tr>
-                <th>FECHA</th>
-                <th>Ciudad</th>
-                <th>lugar</th>
-                <th>Horario</th>
-                <th>Destacado</th>
-            </tr>
-            <tr>
-                <td>13 mayo</td>
-                <td>BARRANQUILLA</td>
-                <td>Plaza de la paz</td>
-                <td>6:00 PM -12:00 AM</td>
-                <td>Show de fuego</td>
-            </tr>
-            <tr>
-                <td>24 mayo</td>
-                <td>CARTAGENA</td>
-                <td>Muelle de los paganos</td>
-                <td>5:00 PM -11:00 AM</td>
-                <td>Chef invitados</td>
-                
-            </tr>
-            <tr>
-                <td>31 mayo</td>
-                <td>Santa marta</td>
-                <td>Bahia Outdoor</td>
-                <td>6:00 PM -12:00 AM</td>
-                <td>Musica en vivo</td>
-                
-            </tr>
-        </table>
-        <div class="sobre">
-            
-            <img src="./assets/img/5aa5cd0b03c35d264aa50eb78a7050cc.jpg" alt="">
-            <h2>Sobre el festival <p>Sabores de la noche es un encuentro unico donde la gstronomia, la musica y la cultura se unen para crear momentos individuales bajo las estrellas.</p> </h2>
-            
-                
-                <ul class="activities"> 
-                    <P>QUE ENCONTRARAS? </P>
-                    <li> <img class="icon" src="./assets/icons/comida-rapida.png" alt=""     >Cocina de autor</li>
-                    <li> <img class="icon" src="./assets/icons/dieta.png" alt=""     >Food trucks </li>
-                    <li> <img class="icon" src="./assets/icons/hamburguesa.png" alt=""     >Musica en vivo</li>
-                   <li> <img class="icon" src="./assets/icons/dieta (1).png" alt=""     >mitologia</li>
-                   <li> <img class="icon" src="./assets/icons/dieta.png" alt=""     >Ambiente unico</li>
+        <section class="section-content">
+            <h2 class="section-title">Próximas fechas</h2>
+            <div class="table-wrapper">
+                <table class="main_table">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Ciudad</th>
+                            <th>Lugar</th>
+                            <th>Horario</th>
+                            <th>Destacado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>13 mayo</td>
+                            <td>Barranquilla</td>
+                            <td>Plaza de la Paz</td>
+                            <td>6:00 PM - 12:00 AM</td>
+                            <td>Show de fuego</td>
+                        </tr>
+                        <tr>
+                            <td>24 mayo</td>
+                            <td>Cartagena</td>
+                            <td>Muelle de los Pueblos</td>
+                            <td>5:00 PM - 11:00 PM</td>
+                            <td>Chef invitados</td>
+                        </tr>
+                        <tr>
+                            <td>31 mayo</td>
+                            <td>Santa Marta</td>
+                            <td>Bahía Outdoor</td>
+                            <td>6:00 PM - 12:00 AM</td>
+                            <td>Música en vivo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="sobre">
+            <img src="./assets/img/5aa5cd0b03c35d264aa50eb78a7050cc.jpg" alt="Festival gastronómico">
+            <div class="sobre-content">
+                <h2>Sobre el festival</h2>
+                <p>Sabores de la noche es un encuentro único donde la gastronomía, la música y la cultura se unen para crear momentos inolvidables bajo las estrellas.</p>
+            </div>
+            <div class="activities">
+                <p class="activities-title">¿Qué encontrarás?</p>
+                <ul>
+                    <li><img class="icon" src="./assets/icons/comida-rapida.png" alt="Cocina de autor"> Cocina de autor</li>
+                    <li><img class="icon" src="./assets/icons/dieta.png" alt="Food trucks"> Food trucks</li>
+                    <li><img class="icon" src="./assets/icons/hamburguesa.png" alt="Música en vivo"> Música en vivo</li>
+                    <li><img class="icon" src="./assets/icons/dieta (1).png" alt="Mitología"> Mitología</li>
+                    <li><img class="icon" src="./assets/icons/dieta.png" alt="Ambiente único"> Ambiente único</li>
                 </ul>
-            
-        </div>
+            </div>
+        </section>
         <h2 class="tittle_theme">Zonas tematicas.</h2>
         <div class="theme">
             <div class="theme_cards1">

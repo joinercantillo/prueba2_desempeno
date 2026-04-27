@@ -1,48 +1,49 @@
 .main_header {
-    background-color: #010524;
+    background-color: rgba(1, 5, 36, 0.95);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
-    position: relative;
-    height: 13vh;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 .logo {
-    width: 10%;
+    width: 8rem;
     height: auto;
     border-radius: 50%;
-    position:absolute;
-    left: 1rem;
-    top: 1rem;
     overflow: hidden;
 }
 
 .nav_menu {
-    
-    font-size: 2.5rem;
-    display: flex;
-    font-size: auto;
-    gap: 2rem;
-    align-items: center;
-    position: relative;
-    margin-left: 50vh;
-    overflow: hidden;
+    display: none;
+    flex-direction: row;
+    gap: 0.75rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(1, 5, 36, 0.99);
+    padding: 1rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 .nav_item_ticket {
     background-color: #ffcc00;
     color: black;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: all 0.2s ease-in;
-    border-style: dotted;
-    border-width: 5px;
-    margin-left: 0px;
-
+    padding: 0.65rem 1rem;
+    border-radius: 999px;
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+    border: none;
+    font-weight: 600;
+    margin-left: 620px;
 }
 
 .nav_item {
     color: white;
-    transition: all 0.2s ease-in;
+    transition: background 0.2s ease-in, color 0.2s ease-in;
 }
 
 .btn_active {
@@ -50,6 +51,15 @@
     pointer-events: all;
     align-items: center;
     justify-content: center;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.btn_active ion-icon {
+    font-size: 2rem;
 }
 
 .active {
@@ -57,9 +67,9 @@
     width: 100%;
     display: flex;
     left: 0;
-    top: 60px;
+    top: 100%;
     flex-direction: column;
-    background-color: var(--color-accend);
+    background-color: rgba(1, 5, 36, 0.99);
     overflow: hidden;
     animation: menu 0.5s normal ease-in-out;
 }

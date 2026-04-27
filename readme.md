@@ -1,63 +1,85 @@
-# Pagina responiva
+# Responsive Festival Website
 
+## Table of Contents
 
-# Tabla de contenido
-
-- []
--
-- [Documentacion](#-Documentacion)
+- [Project Overview](#project-overview)
+- [Technologies](#technologies)
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [How to Use](#how-to-use)
+- [Installation](#installation)
+- [Notes](#notes)
+- [Author](#author)
 
 ---
 
-## Descripcion del proyecto
+## Project Overview
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam incidunt quis ullam tempora libero asperiores beatae a sit, dolorem veniam possimus necessitatibus. Ea rem hic deserunt repellat asperiores culpa qui.
+This is a responsive landing page for a food festival website. It includes a mobile-friendly navigation menu, event listings, festival information, thematic zones, and a gallery section.
 
-## Tecnologias usadas
-|categoria|tecnologies|
-|---------|-----------|
-|Language|Javascript|
+The design adapts to small screens (550px or less) and large desktop screens, ensuring content remains readable and well organized on all devices.
 
-## Arquitectura
+## Technologies
+
+| Category | Technology |
+| -------- | ---------- |
+| Markup | HTML5 |
+| Styling | CSS3 |
+| Interactivity | JavaScript |
+
+## Project Structure
 
 ```
 .
 ├── assets
-│   └── css
-│       ├── animations.css
-│       ├── buttons.css
-│       ├── cards.css
-│       ├── environments.css
-│       ├── footer.css
-│       ├── header.css
-│       ├── main.css
-│       └── reset.css
+│   ├── css
+│   │   ├── animations.css
+│   │   ├── buttons.css
+│   │   ├── cards.css
+│   │   ├── environments.css
+│   │   ├── footer.css
+│   │   ├── header.css
+│   │   ├── main.css
+│   │   └── reset.css
+│   ├── icons
+│   └── img
 ├── index.html
 ├── README.md
 ├── script.js
 └── style.css
 ```
 
-## Funcionalidades
+## Features
 
-- **Sumar:** Mi aplicacion suma.
+- Responsive header with mobile menu toggle.
+- Main hero section with festival branding and background image.
+- Events table with responsive scrolling support.
+- Festival overview and activity highlights.
+- Thematic zone cards for festival attractions.
+- Responsive image gallery.
 
-![imagen de la funcionalidad](./assets/img/main.png)
+## How to Use
 
-## Documentacion
+1. Open the project folder in your code editor or file manager.
+2. Open `index.html` in any modern web browser.
+3. Use the menu button on mobile devices to open and close the navigation.
+4. Scroll through sections to view event details, festival information, and gallery images.
 
-- [main css](./style.css)
+## Installation
 
-## Requerimientos e Instalacion
+No special installation is required. The project runs directly in the browser.
 
-- JavaScript [v1.6]
-- git []
+1. Clone or download the repository.
+2. Open the `responsive` folder.
+3. Open `index.html` in a browser.
 
+## Notes
 
-### Instalacion Git
-
-
+- The site uses local CSS files and JavaScript for navigation behavior.
+- The project is optimized for both mobile and desktop screen widths.
+- Update the image and icon paths if you move files to a new folder.
 
 ## Author
 
-[Joiner Cantillo](httos://www.github.io/ajvilla99)
+- Joiner Cantillo
+- https://www.github.io/ajvilla99
