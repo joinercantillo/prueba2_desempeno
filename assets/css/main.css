@@ -11,12 +11,29 @@ main {
 .theme{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 7rem;
+    justify-content: center;
     
     box-sizing: border-box;
 
     padding: 1rem;
+    overflow: hidden;
+    border-radius: 10px
     
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 300px;
+        height: 250px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
 }
 
 .tittle_theme {
@@ -30,16 +47,24 @@ main {
 }
 
 
-@media (min-width: 550px ){
-    /* main {
-        grid-template: 1fr / repeat(4,1fr);
-    } */
-}
-
-@media (min-width: 1200px ){
-    main {
-        grid-template-columns: 1fr / repeat(4,1fr);
+@media (max-width: 550px ){
+    .theme {
+        flex-direction: row;
+        gap: 2rem;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        width: 550px;
     }
-
-   
+    .theme img {
+        width: 100px;
+        height: 100px;    
+}
+    .theme h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5rem;
+        line-height: 0.5;    
+        color: #ffffff;
+        text-align: center;
+        display: flex;
 }
