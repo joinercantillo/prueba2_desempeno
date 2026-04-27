@@ -1,0 +1,45 @@
+main {
+    margin-top: 2.9rem;
+    padding: 1rem;
+    display: grid;
+    grid-template: auto / 1fr;
+    gap: 1rem;
+    border-radius: 10px;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+.theme{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+    box-sizing: border-box;
+
+    padding: 1rem;
+    
+}
+
+.tittle_theme {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    line-height: 0.5;    
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+@media (min-width: 550px ){
+    /* main {
+        grid-template: 1fr / repeat(4,1fr);
+    } */
+}
+
+@media (min-width: 1200px ){
+    main {
+        grid-template-columns: 1fr / repeat(4,1fr);
+    }
+
+   
+}

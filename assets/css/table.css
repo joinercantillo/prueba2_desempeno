@@ -1,0 +1,17 @@
+.main_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+    color: #ffffff;
+}
+th {
+    background-color: #ffcc00;
+    color: #000000;
+}
+
+th, td {
+    border: 1px solid #9d8632;
+    padding: 8px;
+}

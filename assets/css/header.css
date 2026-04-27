@@ -1,0 +1,85 @@
+.main_header {
+    background-color: #010524;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: relative;
+    height: 13vh;
+}
+.logo {
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+    position:absolute;
+    left: 1rem;
+    top: 1rem;
+    overflow: hidden;
+}
+
+.nav_menu {
+    
+    font-size: 2.5rem;
+    display: flex;
+    font-size: auto;
+    gap: 2rem;
+    align-items: center;
+    position: relative;
+    margin-left: 50vh;
+    overflow: hidden;
+}
+.nav_item_ticket {
+    background-color: #ffcc00;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    border-style: dotted;
+    border-width: 5px;
+    margin-left: 0px;
+
+}
+
+.nav_item {
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+.btn_active {
+    display: flex;
+    pointer-events: all;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    left: 0;
+    top: 60px;
+    flex-direction: column;
+    background-color: var(--color-accend);
+    overflow: hidden;
+    animation: menu 0.5s normal ease-in-out;
+}
+
+.active .nav_item {
+    padding: 1rem;
+}
+
+.active .nav_item:hover {
+    background-color: #929292;
+    color: black;
+}
+
+@media (min-width: 550px) {
+    .nav_menu {
+        display: flex;
+    }
+
+    .btn_active {
+        display: none;
+        pointer-events: none; /* Evento del click */
+    }
+}
