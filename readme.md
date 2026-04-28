@@ -15,7 +15,7 @@
 
 ## Project Overview
 
-This is a responsive landing page for a food festival website. It includes a mobile-friendly navigation menu, event listings, festival information, thematic zones, and a gallery section.
+This is a responsive landing page for a AC/DC website. It includes a mobile-friendly navigation menu, event listings, AC/DC information, Atists, and a gallery section.
 
 The design adapts to small screens (550px or less) and large desktop screens, ensuring content remains readable and well organized on all devices.
 

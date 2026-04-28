@@ -58,9 +58,10 @@
 
 .btn_active {
     display: flex;
+    margin-left: 200px;
     pointer-events: all;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: end;
     border: none;
     background: transparent;
     color: white;
