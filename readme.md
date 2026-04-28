@@ -55,7 +55,7 @@ The design adapts to small screens (550px or less) and large desktop screens, en
 - Main hero section with ACDC branding and background image.
 - Events table with responsive scrolling support.
 - acdc overview and activity highlights.
-- Thematic zone cards for festival attractions.
+- artits cards.
 - Responsive image gallery.
 
 ## How to Use
