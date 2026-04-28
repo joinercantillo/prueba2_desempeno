@@ -1,4 +1,4 @@
-# Responsive Festival Website
+# Responsive AC/DC Website
 
 ## Table of Contents
 
@@ -52,9 +52,9 @@ The design adapts to small screens (550px or less) and large desktop screens, en
 ## Features
 
 - Responsive header with mobile menu toggle.
-- Main hero section with festival branding and background image.
+- Main hero section with ACDC branding and background image.
 - Events table with responsive scrolling support.
-- Festival overview and activity highlights.
+- acdc overview and activity highlights.
 - Thematic zone cards for festival attractions.
 - Responsive image gallery.
 
@@ -69,7 +69,7 @@ The design adapts to small screens (550px or less) and large desktop screens, en
 
 No special installation is required. The project runs directly in the browser.
 
-1. Clone or download the repository.
+1. Clone or download the repository https://github.com/joinercantillo/prueba2_desempeno.
 2. Open the `responsive` folder.
 3. Open `index.html` in a browser.
 
@@ -82,4 +82,4 @@ No special installation is required. The project runs directly in the browser.
 ## Author
 
 - Joiner Cantillo
-- https://www.github.io/ajvilla99
+- https://github.com/joinercantillo
